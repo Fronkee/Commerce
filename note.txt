@@ -1,0 +1,9 @@
+1 => vlucas/phpdotenv ->setup
+2 => altorouter/ altorouter ->setup
+  => .htaccess 
+3 => phpmailer/phpmailer
+4 =>database setup/custom style
+5 =>[
+    '1' => fontend setup,
+    '2' => admin setup
+]

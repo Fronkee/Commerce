@@ -1,0 +1,16 @@
+.ad-login {
+    box-shadow: 0px 1px 3px #2a5d84;
+}
+
+h3 {
+    color: #2a5d84;
+}
+
+label {
+    color: #2a5d84;
+}
+
+button {
+    background-color: #2a5d84!important;
+    color: #fff!important;
+}

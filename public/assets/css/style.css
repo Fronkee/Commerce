@@ -1,0 +1,132 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+.english {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #2a5d84;
+    opacity: 0.9;
+    z-index: 999999;
+    /* #2a5d84; */
+}
+
+.user {
+    font-size: 10px;
+    color: #fff;
+}
+
+.content {
+    border-left-style: 1px solid black;
+}
+
+.dropdown-menu {
+    background-color: #2a5d84;
+    width: 196px;
+}
+
+.dropdown-item:hover {
+    background-color: #2a5d84;
+    /* color: #2a5d84 !important; */
+}
+
+
+/* icon */
+
+.badge-icon {
+    background-color: #fff;
+    position: relative;
+    top: -15px;
+    left: -5px;
+    padding: 4px;
+    border-radius: 10px 3px;
+    font-size: 10px;
+    color: #eb608e;
+}
+
+
+/* icon */
+
+.rowCard {
+    border: 1px solid #ffff;
+    box-shadow: 1px 3px 7px #2a5d84;
+}
+
+#point {
+    cursor: pointer;
+}
+
+.input {
+    box-shadow: 0px 2px 5px #3e3e3e;
+}
+
+.category {
+    box-shadow: 0px 2px 5px #3e3e3e;
+}
+
+.sidebar>button {
+    background-color: rgb(42, 80, 132);
+}
+
+.form_box {
+    box-shadow: 0px 2px 5px #3e3e3e;
+}
+
+.form_box,
+label {
+    color: #2a5d84;
+}
+
+.form_box>form>div>.btn {
+    background-color: #2a5d84;
+}
+
+.form_box>form>div>.img_box {
+    box-shadow: 0px 2px 3px #3e3e3e;
+}
+
+
+/* card */
+
+.card-title {
+    color: #2a5d84;
+}
+
+.card-box {
+    box-shadow: 0px 2px 3px #2a5d84;
+}
+
+
+/* detail */
+
+.detail-body {
+    background-color: rgb(252, 249, 249);
+}
+
+.detail-button>cite>button {
+    padding: 8px;
+    width: 200px;
+    margin-right: 3px;
+}
+
+
+/* end */
+
+.con-end {
+    background-color: #fcfbfb;
+}
+
+.con-end>* {
+    color: #2a5d84;
+}
+
+.con-end>div>div>:nth-of-type(1)>ul>li>a {
+    text-decoration: none;
+    color: #2a5d84;
+}

@@ -1,0 +1,15 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        },
+        "files": [
+            "app/function/helper.php"
+        ]
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.3",
+        "altorouter/altorouter": "^2.0",
+        "phpmailer/phpmailer": "^6.5"
+    }
+}
