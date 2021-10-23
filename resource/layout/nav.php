@@ -21,7 +21,7 @@ echo URLROOT?>">
         </li>
         <!-- {{ cart }} -->
         <li class="nav-item">
-          <a class="nav-link text-white" aria-current="page" href="<?php echo URLROOT.''?>">Content</a>
+          <a class="nav-link text-white" aria-current="page" href="<?php echo URLROOT.'content'?>">Content</a>
         </li>
         <li class="nav-item">
           <?php if(Session::has('email')):?>

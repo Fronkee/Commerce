@@ -18,6 +18,10 @@ class IndexController extends BaseController{
          $this->views('index',$data);
         
      }
+     public function content()
+     {
+         $this->views('content');
+     }
  }
 
 
