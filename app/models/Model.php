@@ -168,4 +168,29 @@ class Model{
      }
   }
  
+
+  //insert into message
+  public function insertMsg($name,$email,$phone,$state)
+  {
+    $this->db->query("INSERT INTO message (name,email,phone,state) VALUES (:name,:email,:phone,:state)");
+    $this->db->bind(":name",$name);
+    $this->db->bind(":email",$email);
+    $this->db->bind(":phone",$phone);
+    $this->db->bind(":state",$state);
+    return $this->db->execute();
+  }
+
+  //orders
+  public function insertOrders($email,$items)
+  {
+    $this->db->query("INSERT INTO orders (email,items) VALUES (:email,:items)");
+    $this->db->bind(":items",$items);
+    $this->db->bind(":email",$email);
+    return $this->db->execute();
+  }
+
+  public function getOrders(){
+    $this->db->query("SELECT * FROM orders WHERE state=1");
+     return  $this->db->multipleSet();
+  }
 }

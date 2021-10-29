@@ -10,7 +10,6 @@
  <div class="col-md-2 side-bar">
  <button type="button" class="list-group-item  list-group-item-action d-flex justify-content-between align-items-start">
     <a class="english" href="<?php echo URLROOT .'admin/home'?>">DashBroad</a> 
-    <span class="badge  rounded-pill"><?php echo counting('category')?> </span>
     </button>
 
    <button type="button" class="list-group-item  list-group-item-action d-flex justify-content-between align-items-start">
@@ -32,6 +31,18 @@
     <a class="english" href="<?php echo URLROOT .'admin/create-admin'?>">Create-Admin </a> 
     <span class="badge rounded-pill"><?php echo counting('admin')?> </span>
     </button>
+
+    
+    <button type="button" class="list-group-item  list-group-item-action d-flex justify-content-between align-items-start">
+    <a class="english" href="<?php echo URLROOT .'admin/message'?>">Message </a> 
+    <span class="badge rounded-pill"><?php echo counting('message')?> </span>
+    </button>
+
+    <button type="button" class="list-group-item  list-group-item-action d-flex justify-content-between align-items-start">
+    <a class="english" href="<?php echo URLROOT .'admin/orders'?>">Orders </a> 
+    <span class="badge rounded-pill"><?php echo orderCount('orders')?> </span>
+    </button>
+  
   
 </div> 
 

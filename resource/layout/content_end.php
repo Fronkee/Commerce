@@ -46,7 +46,7 @@ $category = $cats->all('category','asc');
       </div>
       <div class="text-dark ms-5"><hr></div>
       <div class="container">
-          <p class="ms-5 fw-bold english text-start">&COPY;<b>2021-2022 Ice-Berg Com.Ltd </b> . <small>All rights reserved.</small></p>
+          <p class="ms-5 fw-bold english text-start">&COPY;<b>2021-2022 Ice-Berg Co.Ltd </b> . <small>All rights reserved.</small></p>
       </div>
     </div>
 </div>

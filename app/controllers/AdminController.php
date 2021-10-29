@@ -83,4 +83,17 @@ use App\Models\CategoryModel;
        }
     }
 
+    public function msg()
+   {
+      $data = cold(['msg'],[$this->model->all('message')]);
+      $this->views('admin/message',$data);
+   }
+
+   public function orders()
+   {
+      $items= $this->model->getOrders();
+      // format($items);
+    $data = cold(['orders'],[$this->model->getOrders()]);
+    $this->views('admin/order',$data);
+   }
  }

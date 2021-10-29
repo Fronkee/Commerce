@@ -21,9 +21,9 @@ echo URLROOT?>">
         <!-- {{ cart }} -->
          
         <li class="nav-item">
-           <a class="nav-link text-white" aria-current="page"  href="<?php ?>" position-relative>
+           <a class="nav-link text-white" aria-current="page"  href="<?php echo URLROOT.'admin/orders' ?>" position-relative>
            <i class="bi bi-cart-fill"></i>
-           <span class="badge  english badge-icon" id="cart-count">0</span>
+           <span class="badge  english badge-icon" id="cart-count"><?php echo orderCount('orders')?></span>
            </a> 
         </li>
         <!-- {{ cart }} -->

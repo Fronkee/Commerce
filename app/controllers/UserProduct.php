@@ -63,14 +63,21 @@ class UserProduct extends BaseController
 
      public function   payout(){
         $post = Request::get('post');
-        if($this->saveOrder($post->items)){
-          echo "success";
-          exit;
-        }
-     }
+        $email =  Session::get('email');
+        Session::replace("cart-items",$post->items);
+        $items= Session::get('cart-items');
+        $array = [];
+          foreach($items as $item){
+             array_push($array,$item);
 
-     public function   saveOrder($orders){
-          $order = serialize($orders);
-          return true;
-   }
+          }
+          $con =  $this->product->insertOrders($email,json_encode($array));
+              if($con){
+                echo "success";
+                exit;
+              }else{
+                echo "error";
+              }
+    }
+  
 }

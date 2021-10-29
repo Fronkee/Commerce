@@ -27,4 +27,7 @@
          $router->map('GET','/admin/product/product/[i:id]','App\Controllers\ProductDetailController@product','Arrange-Product Route');
          $router->map('GET','/admin/product/detail-delete/[i:id]','App\Controllers\ProductDetailController@detailDelete','delete detail-Product Route');
          
-         
+         #message
+         $router->map('GET','/admin/message','App\Controllers\AdminController@msg','msg Route');
+         #orders
+         $router->map("GET",'/admin/orders','App\Controllers\AdminController@orders','order Route');

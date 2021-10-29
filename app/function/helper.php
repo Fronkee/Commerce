@@ -55,6 +55,12 @@ use App\Models\Model;
       $con = $model->all($table);
       return count($con);
     } 
+
+    function orderCount()
+    {
+       $model = new Model();
+      return count( $model-> getOrders());
+    }
     //format for Basecontroller view method @$data = []
     function cold(Array $key,Array $value)
     {

@@ -56,6 +56,7 @@
 .rowCard {
     border: 1px solid #ffff;
     box-shadow: 1px 3px 7px #2a5d84;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 
 #point {
