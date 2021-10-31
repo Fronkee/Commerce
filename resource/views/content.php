@@ -14,7 +14,7 @@ require_once APPROOT .'/resource/layout/header.php'?>
      <p class="english fs-3 text-center" style="font-family: 'Courier New', Courier, monospace;color:#2a5d84;"><u>Content Our Teams</u></p>
      <div class="row gx-0 mx-auto">
      <div class="col google-map">
-        <iframe class="rounded" width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=16.85925855054559~96.24053679754832&lvl=15.391238677576853&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+        <iframe class="rounded" width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=16.859977886864343~96.24094&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
         </iframe>
         <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
            <button class="btn btn-primary text-primary">  

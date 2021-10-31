@@ -59,7 +59,7 @@ use App\Models\Model;
     function orderCount()
     {
        $model = new Model();
-      return count( $model-> getOrders());
+      return count( $model-> getOrders(1));
     }
     //format for Basecontroller view method @$data = []
     function cold(Array $key,Array $value)

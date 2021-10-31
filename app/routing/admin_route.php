@@ -31,3 +31,7 @@
          $router->map('GET','/admin/message','App\Controllers\AdminController@msg','msg Route');
          #orders
          $router->map("GET",'/admin/orders','App\Controllers\AdminController@orders','order Route');
+         $router->map("POST",'/admin/orders','App\Controllers\AdminController@postOrders','order-post Route');
+         $router->map("GET",'/admin/orders-ready','App\Controllers\AdminController@orderReadyList','order-ready Route');
+         $router->map("POST",'/admin/orders-ready','App\Controllers\AdminController@orderReadyListPost','order-ready-post Route');
+         $router->map("GET",'/admin/deleteOrder/[i:id]','App\Controllers\AdminController@deleteOrder','delete-order Route');

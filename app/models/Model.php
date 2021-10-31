@@ -189,8 +189,23 @@ class Model{
     return $this->db->execute();
   }
 
-  public function getOrders(){
-    $this->db->query("SELECT * FROM orders WHERE state=1");
+  public function getOrders($state)
+  {
+    $this->db->query("SELECT * FROM orders WHERE state=:state");
+    $this->db->bind(":state",$state);
      return  $this->db->multipleSet();
+  }
+  public function deleteOrder($id)
+  {
+    $this->db->query("DELETE FROM orders WHERE id=:id");
+    $this->db->bind(":id",$id);
+    return $this->db->execute();
+  }
+  public function changeStateOrders($id,$state)
+  {
+    $this->db->query("UPDATE  orders SET state=:state WHERE id=:id");
+    $this->db->bind(":state",$state);
+    $this->db->bind(":id",$id);
+    return $this->db->execute();
   }
 }

@@ -4,6 +4,11 @@ use App\Classes\Session;
 
 require_once APPROOT .'/resource/layout/header.php'?>
 <?php require_once APPROOT .'/resource/layout/admin/ad_nav.php'?>
+<style>
+  .dash{
+    box-shadow: 0px 2px 5px #3e3e3e;
+  }
+</style>
 <?php require_once APPROOT .'/resource/layout/admin/sidebar.php'?>
  
   <div class="container-fluid english text-center text-info border ">
@@ -26,19 +31,38 @@ require_once APPROOT .'/resource/layout/header.php'?>
         </div>    
        <?php endif;?> <!-- {{ msg }} -->
      </div>
-     <div class="container overflow-hidden border my-3 p-5 rounded">
+     <div class="container overflow-hidden border my-3 p-5 rounded" style="box-shadow: 0px 2px 5px #3e3e3e;">
         <div class="row gy-3">
-          <div class="col-5">
-            <div class="p-3 border "><a href="#">Category - Create</a></div>
+          <div class="col-5 mx-auto">
+            <div class="p-3 border dash ">
+            <span class="text-start"><i class="bi bi-nut me-5 fs-5"></i></span>  
+            <a href="<?php echo URLROOT.'admin/category'?>">Category - Create</a></div>
           </div>
-          <div class="col-5">
-            <div class="p-3 border "><a href="">Products - Create </a></div>
+          <div class="col-5 mx-auto">
+            <div class="p-3 border dash">
+              <span><i class="bi bi-nut me-5 fs-5"></i></span>
+              <a href="<?php echo URLROOT. 'admin/product/create'?>">Products - Create </a>
+            </div>
           </div>
-          <div class="col-5">
-            <div class="p-3 border "><a href="">All - Products </a></div>
+          <div class="col-5 mx-auto">
+            <div class="p-3 border dash">
+            <span><i class="bi bi-nut me-5 fs-5"></i></span>  
+            <a href="<?php echo URLROOT. 'admin/product/detail'?>">All - Products </a></div>
           </div>
-          <div class="col-5">
-            <div class="p-3 border "><a href="">Admin - Create</a></div>
+          <div class="col-5 mx-auto">
+            <div class="p-3 border dash">
+            <span><i class="bi bi-nut me-5 fs-5"></i></span>  
+            <a href="<?php echo URLROOT. 'admin/create-admin'?>">Admin - Create</a></div>
+          </div>
+          <div class="col-5 mx-auto">
+            <div class="p-3 border dash">
+            <span><i class="bi bi-nut me-5 fs-5"></i></span>  
+            <a href="<?php echo URLROOT. 'admin/orders'?>">Client Orders</a></div>
+          </div>
+          <div class="col-5 mx-auto">
+            <div class="p-3 border dash">
+            <span><i class="bi bi-nut me-5 fs-5"></i></span>  
+            <a href="<?php echo URLROOT. 'admin/message'?>">Client Message</a></div>
           </div>
   </div>
 </div>

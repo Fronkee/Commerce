@@ -91,9 +91,37 @@ use App\Models\CategoryModel;
 
    public function orders()
    {
-      $items= $this->model->getOrders();
+      $items= $this->model->getOrders(1);
       // format($items);
-    $data = cold(['orders'],[$this->model->getOrders()]);
+    $data = cold(['orders'],[$this->model->getOrders(1)]);
     $this->views('admin/order',$data);
+   }
+   public function postOrders()
+   {
+      $post = Request::get('post');
+      if( $this->model->changeStateOrders($post->id,2)){
+         $this->orders();
+      }
+     
+   }
+   public function orderReadyList()
+   {
+      $data = cold(['orders'],[$this->model->getOrders(2)]);
+      $this->views('admin/readyOrder',$data);
+   }
+   public function orderReadyListPost()
+   {
+      $post = Request::get('post');
+      if( $this->model->changeStateOrders($post->id,1)){
+         $this->orderReadyList();
+      }
+       
+   }
+
+   public function deleteOrder($id)
+   {
+      if($this->model->deleteOrder($id)){
+          $this->orderReadyList();
+      }
    }
  }
