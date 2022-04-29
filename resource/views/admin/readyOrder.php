@@ -62,8 +62,8 @@ require_once APPROOT .'/resource/layout/header.php'?>
                </div>
                <input type="hidden" name="id" value="<?php echo $order->id?>">
                <div class="col-md-4 text-center">
-                <span class="english align-middle"><a href="<?php echo URLROOT.'admin/deleteOrder/'.$order->id?>"><i class="bi bi-trash fs-5 "></i></a></span> 
-                 <button class="btn btn-sm btn-danger">Un-Ready</button>
+                 <span class="english align-middle"><a href="<?php echo URLROOT.'admin/deleteOrder/'.$order->id?>"><i class="bi bi-trash fs-5 "></i></a></span> 
+                 <button class="btn btn-sm btn-danger">UnReady</button>
                </div>
              </div>
          </form>

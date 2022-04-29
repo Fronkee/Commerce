@@ -36,7 +36,8 @@ require_once APPROOT .'/resource/layout/header.php'?>
           <div class="col-5 mx-auto">
             <div class="p-3 border dash ">
             <span class="text-start"><i class="bi bi-nut me-5 fs-5"></i></span>  
-            <a href="<?php echo URLROOT.'admin/category'?>">Category - Create</a></div>
+            <a href="<?php echo URLROOT.'admin/category'?>">Category - Create</a>
+          </div>
           </div>
           <div class="col-5 mx-auto">
             <div class="p-3 border dash">

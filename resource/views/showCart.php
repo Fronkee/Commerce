@@ -154,6 +154,7 @@ require_once APPROOT . '/resource/layout/header.php'?>
           clearCart();
           getCart(); 
           showProduct([]);
+          window.location.href = 'http://localhost:8080/MYSHOP/public'
         },
         errors: function(response) {
             console.log(response.responseText);

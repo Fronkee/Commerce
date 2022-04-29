@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2021 at 01:42 PM
+-- Generation Time: Feb 23, 2022 at 02:20 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.4.22
 
@@ -42,8 +42,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `password`, `phone`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin@gmail.com', '$2y$10$t7mLMeRG4LU2hMHndYe.DO65/U7Jq7l4qSLWtw9vO/WPByMPx05XS', '09786924674', '2021-10-15 05:01:48', '2021-10-15 07:01:18'),
-(2, 'shweyamin', 'shwe@gmail.com', '$2y$10$t7mLMeRG4LU2hMHndYe.DO65/U7Jq7l4qSLWtw9vO/WPByMPx05XS', '091212121212', '2021-10-17 13:47:49', '0000-00-00 00:00:00');
+(3, 'admin', 'admin@gmail.com', '$2y$10$PqZ5LkEj.5mTidd3AD8q7u2EEnxzzbcfoyq0QA0ixh8pV7JmUh5Au', '09786924674', '2022-02-23 12:23:12', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -68,7 +67,7 @@ INSERT INTO `category` (`id`, `name`, `created_at`, `updated_at`) VALUES
 (3, 'Bikes', '2021-09-21 16:51:12', '2021-09-21 16:51:12'),
 (5, 'perfume', '2021-10-03 16:22:40', '2021-10-03 16:22:40'),
 (6, 'CARS', '2021-10-05 14:45:53', '2021-10-05 14:45:53'),
-(7, 'Address', '2021-10-05 14:46:16', '2021-10-05 14:46:16'),
+(7, 'Dress', '2021-10-31 12:59:02', '2021-10-05 14:46:16'),
 (8, 'Salad', '2021-10-09 14:07:30', '2021-10-05 14:46:41');
 
 -- --------------------------------------------------------
@@ -229,7 +228,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `category`

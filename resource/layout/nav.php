@@ -16,9 +16,9 @@ echo URLROOT?>">
       <li class="nav-item">
           <a class="nav-link text-white" aria-current="page" href="<?php echo URLROOT ?>">Home</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link text-white" aria-current="page" href="<?php echo URLROOT.'admin/home'?>">Admin</a>
-        </li>
+        </li> -->
         <!-- {{ cart }} -->
         <li class="nav-item">
           <a class="nav-link text-white" aria-current="page" href="<?php echo URLROOT.'content'?>">Content</a>

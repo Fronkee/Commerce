@@ -12,7 +12,7 @@
              localStorage.setItem("items", JSON.stringify(ary));
          }
      }
-     alert("Item already At to Cart")
+     alert("Item  Add to Cart")
      getCart();
  }
 

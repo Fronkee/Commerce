@@ -71,13 +71,14 @@ class UserProduct extends BaseController
              array_push($array,$item);
 
           }
-          $con =  $this->product->insertOrders($email,json_encode($array));
-              if($con){
-                echo "success";
-                exit;
-              }else{
-                echo "error";
-              }
+        $con =  $this->product->insertOrders($email,json_encode($array));
+            if($con){
+              echo "success";
+              exit;
+            }else{
+              echo "error";
+            }
+     
     }
   
 }
